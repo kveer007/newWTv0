@@ -82,7 +82,7 @@ function showCurrentIntake() {
     let currentData = dailyHistory[currentDate] || [];
     let total = currentData.reduce((a, b) => a + b, 0);
     let content = "";
-    content += `<h3>Total: ${total} ml</h3>`;
+    content += `<h3>Today's Total: ${total} ml</h3>`;
     if (currentData.length > 0) {
         content += `<h4>Details:</h4><ul>`;
         for (let entry of currentData) {
